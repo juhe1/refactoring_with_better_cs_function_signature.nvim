@@ -95,7 +95,7 @@ local cs = {
     ["function"] = function(opts)
         return string.format(
             [[
-public static void %s(%s) {
+private void %s(%s) {
 %s
 }
 
@@ -108,7 +108,7 @@ public static void %s(%s) {
     function_return = function(opts)
         return string.format(
             [[
-public static %s %s(%s) {
+private %s %s(%s) {
 %s
 }
 
